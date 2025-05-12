@@ -1,0 +1,289 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  .sectionsoprt {
+    font-size: 12px;
+  }
+  
+  /* Container */
+  .container {
+    width: 462px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    color: #ff6b82;
+  }
+  
+  /* Hero / Gradient Header */
+  .yaybogo {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 20px;
+    margin: 50px 0 22px;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* BOGO Text */
+  .bogo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .yay {
+    font-size: 1.8rem;
+    margin-right: 8px;
+  }
+  
+  .bogo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Section Line */
+  .line {
+    width: 122px;
+    height: 1.6px;
+    background-color: lightgray;
+    margin: 50px auto 22px;
+  }
+  
+  /* Delivery Cost */
+  .deleverycost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -20px;
+  }
+  
+  /* Box Styling */
+  .box {
+    position: relative;
+    border: 2px solid #cbcaca;
+    border-radius: 5px;
+    background: #fff;
+    height: 74.11px;
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: visible;
+  }
+  
+  .box.selected {
+    border-color: #ff6b82;
+    border-width: 3px;
+    background-color: #f8f1f2;
+    border-radius: 0;
+    height: 174.11px;
+    width: 342px;
+    padding: 20px;
+  }
+  
+  /* Box Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .labelbold {
+    font-weight: bold;
+  }
+  
+  .labelelemrn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sizeandcolorsection {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sizeandcolor {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0 35px 0 15px;
+  }
+  
+  /* Discount Badge */
+  .discount,
+  .popular {
+    background: #ff6b82;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .discount {
+    width: 55px;
+    height: 17px;
+    margin-left: 10px;
+  }
+  
+  /* Most Popular Label */
+  .most-popular {
+    position: absolute;
+    top: -12px;
+    right: 0;
+    background: #ff6b82;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 119px;
+    height: 22px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .most-popular::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #ff6b82;
+    border-radius: 2px;
+  }
+  
+  /* Prices */
+  .price {
+    font-weight: bold;
+    font-size: 14.46px;
+  }
+  
+  .priceee {
+    font-weight: bold;
+    color: #868686;
+    font-size: 10px;
+    text-decoration: line-through;
+  }
+  
+  .priceoldnew {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+  }
+  
+  /* Extra Label Boxes */
+  .elestimated,
+  .elestimatedee {
+    height: 25.31px;
+    font-size: 12px;
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 4px;
+  }
+  
+  .elestimated {
+    width: 65.98px;
+  }
+  
+  .elestimatedee {
+    width: 72.98px;
+  }
+  
+  /* Extra Section Spacing */
+  .secontspacing {
+    margin-top: 8px;
+  }
+  
+  .standardhedd {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  /* Free Delivery */
+  .free-delivery {
+    color: #ff6b82;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  /* Total */
+  .total {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  /* Add to Cart Button */
+  .add-to-cart {
+    background: #ff6b82;
+    color: white;
+    padding: 10px;
+    width: 85%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+    text-align: right;
+  }
+  
+  /* Radio Buttons */
+  input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #868686;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #ff6b82;
+    border: 5px solid white;
+    box-shadow: 0 0 0 2px #ff6b82;
+  }
+  
+  .radiocolour {
+    color: #ff6b82;
+  }
+  
+  /* Hidden Content Reveal */
+  .content {
+    display: none;
+  }
+  
+  .box.selected .content {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+    padding: 12px;
+  }
+  
